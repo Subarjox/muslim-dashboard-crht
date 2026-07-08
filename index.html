@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muslim Travel Market Dashboard — Global Muslim Travel Index 2026</title>
+  <meta name="description"
+    content="Key figures on the world's fastest-growing travel segment, sourced from the Mastercard-CrescentRating Global Muslim Travel Index (GMTI) 2026 report.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="apple-touch-icon" href="./favicon.svg">
+  <script src="./support.js"></script>
+</head>
+
+<body>
+  <x-dc>
+
+    <helmet data-dc-atomics>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+      <style>
+        body {
+          margin: 0;
+          background: oklch(98% 0.008 90);
+          font-family: "IBM Plex Sans", system-ui, sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        ::selection {
+          background: oklch(80% 0.09 85 / 0.4);
+        }
+
+        /* ── Hover Tooltips ── */
+        .dc-region-item:hover .dc-region-tooltip {
+          opacity: 1 !important;
+        }
+
+        /* ── Responsive Overrides ── */
+
+        /* Tablet: <= 1024px */
+        @media (max-width: 1024px) {
+          .dc-header {
+            padding: 32px 32px 0 !important;
+          }
+
+          .dc-header h1 {
+            font-size: 32px !important;
+          }
+
+          .dc-stat-cards {
+            grid-template-columns: 1fr 1fr !important;
+            padding: 24px 32px 0 !important;
+          }
+
+          .dc-chart-section {
+            padding: 32px 32px 0 !important;
+          }
+
+          .dc-dest-section {
+            padding: 28px 32px 40px !important;
+          }
+
+          .dc-dest-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+          }
+
+          .dc-footer {
+            padding: 0 32px 32px !important;
+          }
+
+          .dc-modal-inner {
+            padding: 28px 28px 24px !important;
+            max-width: 96vw !important;
+          }
+
+          .dc-modal-detail-grid {
+            grid-template-columns: 1fr !important;
+          }
+
+          .dc-modal-cat-grid {
+            grid-template-columns: 1fr 1fr !important;
+          }
+        }
+
+        /* Mobile landscape / small tablet: <= 768px */
+        @media (max-width: 768px) {
+          .dc-header {
+            padding: 24px 20px 0 !important;
+          }
+
+          .dc-header h1 {
+            font-size: 26px !important;
+          }
+
+          .dc-header p {
+            font-size: 14px !important;
+          }
+
+          .dc-stat-cards {
+            grid-template-columns: 1fr !important;
+            padding: 20px 20px 0 !important;
+            gap: 14px !important;
+          }
+
+          .dc-hero-value {
+            font-size: 48px !important;
+          }
+
+          .dc-stat-value {
+            font-size: 32px !important;
+          }
+
+          .dc-chart-section {
+            padding: 24px 20px 0 !important;
+          }
+
+          .dc-chart-container {
+            padding: 20px 16px 18px !important;
+          }
+
+          .dc-chart-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+          }
+
+          .dc-chart-scroll {
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch;
+            margin: 0 -8px;
+            padding: 0 8px;
+          }
+
+          .dc-chart-svg {
+            min-width: 500px !important;
+            height: auto !important;
+          }
+
+          .dc-dest-section {
+            padding: 24px 20px 32px !important;
+          }
+
+          .dc-dest-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+          }
+
+          .dc-dest-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 14px !important;
+          }
+
+          .dc-footer {
+            padding: 0 20px 24px !important;
+          }
+
+          .dc-modal-backdrop {
+            padding: 16px !important;
+          }
+
+          .dc-modal-inner {
+            padding: 24px 20px 20px !important;
+          }
+
+          .dc-modal-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 16px !important;
+            padding-right: 40px !important;
+          }
+
+          .dc-modal-rank-value {
+            font-size: 32px !important;
+          }
+
+          .dc-modal-score-value {
+            font-size: 32px !important;
+          }
+
+          .dc-modal-cat-grid {
+            grid-template-columns: 1fr !important;
+          }
+
+          .dc-modal-divider {
+            display: none !important;
+          }
+
+          .dc-region-bar-container {
+            gap: 16px !important;
+            height: 200px !important;
+          }
+
+          .dc-region-bar {
+            width: 40px !important;
+          }
+        }
+
+        /* Mobile portrait: <= 480px */
+        @media (max-width: 480px) {
+          .dc-header {
+            padding: 20px 16px 0 !important;
+          }
+
+          .dc-header h1 {
+            font-size: 22px !important;
+          }
+
+          .dc-header p {
+            font-size: 13px !important;
+          }
+
+          .dc-year-toggle {
+            width: 100% !important;
+            justify-content: center !important;
+          }
+
+          .dc-stat-cards {
+            padding: 16px 16px 0 !important;
+          }
+
+          .dc-hero-value {
+            font-size: 40px !important;
+          }
+
+          .dc-stat-value {
+            font-size: 28px !important;
+          }
+
+          .dc-chart-section {
+            padding: 20px 16px 0 !important;
+          }
+
+          .dc-chart-container {
+            padding: 16px 12px 14px !important;
+          }
+
+          .dc-chart-scroll {
+            margin: 0 -4px;
+            padding: 0 4px;
+          }
+
+          .dc-chart-svg {
+            min-width: 460px !important;
+          }
+
+          .dc-chart-tabs {
+            flex-wrap: wrap !important;
+          }
+
+          .dc-dest-section {
+            padding: 20px 16px 28px !important;
+          }
+
+          .dc-dest-grid {
+            grid-template-columns: 1fr !important;
+            gap: 12px !important;
+          }
+
+          .dc-footer {
+            padding: 0 16px 20px !important;
+          }
+
+          .dc-modal-backdrop {
+            padding: 8px !important;
+          }
+
+          .dc-modal-inner {
+            padding: 20px 16px 16px !important;
+            border-radius: 14px !important;
+          }
+
+          .dc-modal-map {
+            height: 120px !important;
+          }
+
+          .dc-region-bar-container {
+            gap: 10px !important;
+            height: 160px !important;
+          }
+
+          .dc-region-bar {
+            width: 32px !important;
+          }
+
+          .dc-legend {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 6px !important;
+          }
+        }
+
+        /* Smooth transitions for interactive elements */
+        .dc-dest-card {
+          transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .dc-dest-card:hover {
+          box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+          transform: translateY(-3px);
+        }
+
+        /* Touch-friendly tap targets */
+        @media (hover: none) and (pointer: coarse) {
+          button {
+            min-height: 44px;
+            min-width: 44px;
+          }
+        }
+      </style>
+    </helmet>
+
+    <div style="min-height:100vh; background: oklch(98% 0.008 90); color: oklch(22% 0.02 240);">
+
+      <!-- HEADER -->
+      <div class="dc-header" style="padding: 40px 56px 0; max-width: 1320px; margin: 0 auto;">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+          <div>
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+              <div style="width:10px; height:10px; transform:rotate(45deg); background: oklch(55% 0.11 80);"></div>
+              <span
+                style="font:600 12px/1 'IBM Plex Sans'; letter-spacing:0.12em; text-transform:uppercase; color: oklch(45% 0.09 200); white-space:nowrap;">Global
+                Muslim Travel Index &middot; 2026</span>
+            </div>
+            <h1 style="margin:0; font:600 40px/1.1 'Space Grotesk'; color: oklch(24% 0.03 220);">Muslim Travel Market
+              Dashboard</h1>
+            <p style="margin:10px 0 0; font:400 16px/1.5 'IBM Plex Sans'; color: oklch(45% 0.02 240); max-width:560px;">
+              Key figures on the world's fastest-growing travel segment — sourced from the
+              Mastercard&ndash;CrescentRating GMTI 2026 report.</p>
+          </div>
+          <div class="dc-year-toggle"
+            style="display:flex; align-items:center; gap:8px; padding:6px; background:#fff; border:1px solid oklch(90% 0.01 90); border-radius:12px; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+            <button onClick="{{ setYear2024 }}"
+              style="border:none; cursor:pointer; font:600 13px 'IBM Plex Sans'; padding:9px 16px; border-radius:8px; transition: all 0.15s ease; background: {{ year2024Bg }}; color: {{ year2024Color }}; white-space:nowrap;">2025
+              Snapshot</button>
+            <button onClick="{{ setYear2028 }}"
+              style="border:none; cursor:pointer; font:600 13px 'IBM Plex Sans'; padding:9px 16px; border-radius:8px; transition: all 0.15s ease; background: {{ year2028Bg }}; color: {{ year2028Color }}; white-space:nowrap;">2030
+              Outlook</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- geometric divider band -->
+      <div
+        style="height:14px; margin:28px 0 0; background-image: repeating-conic-gradient(from 45deg, oklch(55% 0.09 200 / 0.14) 0deg 45deg, transparent 45deg 90deg); background-size: 14px 14px;">
+      </div>
+
+      <!-- STAT CARDS -->
+      <div class="dc-stat-cards" style="padding: 32px 56px 0; max-width: 1320px; margin: 0 auto;">
+        <div class="dc-stat-cards" style="display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap:20px;">
+
+          <!-- HERO CARD -->
+          <div
+            style="position:relative; background: linear-gradient(135deg, oklch(30% 0.07 210), oklch(22% 0.06 220)); border-radius:18px; padding:28px 28px 24px; color:#fff; overflow:visible;">
+            <div
+              style="position:absolute; inset:0; border-radius:18px; overflow:hidden; background-image: repeating-conic-gradient(from 0deg, rgba(255,255,255,0.05) 0deg 45deg, transparent 45deg 90deg); background-size: 40px 40px; opacity:0.6;">
+            </div>
+            <div style="position:relative;">
+              <div style="display:flex; align-items:center; justify-content:space-between;">
+                <span
+                  style="font:600 12px 'IBM Plex Sans'; letter-spacing:0.08em; text-transform:uppercase; color: oklch(85% 0.06 85);">{{
+                  heroLabel }}</span>
+                <div style="position:relative;" onMouseEnter="{{ hoverStatHero }}" onMouseLeave="{{ clearHoverStat }}">
+                  <span
+                    style="cursor:help; font:600 11px 'IBM Plex Sans'; width:18px; height:18px; border-radius:50%; border:1px solid rgba(255,255,255,0.4); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.7);">i</span>
+                  <div
+                    style="position:absolute; top:26px; left:0; width:240px; background: oklch(18% 0.02 230); color:#fff; font:500 12px/1.5 'IBM Plex Sans'; padding:12px 14px; border-radius:10px; opacity:{{ heroCitationOpacity }}; pointer-events:none; transition:opacity 0.15s ease; box-shadow:0 12px 28px rgba(0,0,0,0.25); z-index:20;">
+                    {{ heroCitation }}</div>
+                </div>
+              </div>
+              <div class="dc-hero-value"
+                style="font:700 64px/1 'Space Grotesk'; margin-top:16px; letter-spacing:-0.02em;">{{ heroValue }}</div>
+              <div
+                style="margin-top:14px; display:inline-flex; align-items:center; gap:6px; font:600 13px 'IBM Plex Sans'; padding:6px 12px; border-radius:999px; background: rgba(255,255,255,0.12); color: oklch(88% 0.07 85);">
+                {{ heroDelta }}</div>
+            </div>
+          </div>
+
+          <!-- CARD: market value -->
+          <div
+            style="position:relative; background:#fff; border:1px solid oklch(91% 0.01 90); border-radius:18px; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span
+                style="font:600 12px 'IBM Plex Sans'; letter-spacing:0.06em; text-transform:uppercase; color: oklch(45% 0.02 240);">Projected
+                Market Value</span>
+              <div style="position:relative;" onMouseEnter="{{ hoverStatMarket }}" onMouseLeave="{{ clearHoverStat }}">
+                <div
+                  style="width:8px; height:8px; cursor:help; transform:rotate(45deg); background: oklch(55% 0.11 80); flex:none;">
+                </div>
+                <div
+                  style="position:absolute; top:16px; right:-8px; width:230px; background: oklch(18% 0.02 230); color:#fff; font:500 12px/1.5 'IBM Plex Sans'; padding:12px 14px; border-radius:10px; opacity:{{ marketCitationOpacity }}; pointer-events:none; transition:opacity 0.15s ease; box-shadow:0 12px 28px rgba(0,0,0,0.25); z-index:20;">
+                  US$310B projected annual Muslim travel spend by 2030 &mdash; Mastercard-CrescentRating GMTI 2026</div>
+              </div>
+            </div>
+            <div class="dc-stat-value"
+              style="font:700 40px/1 'Space Grotesk'; margin-top:18px; color: oklch(28% 0.05 220);">US$310B</div>
+            <div style="margin-top:10px; font:500 13px 'IBM Plex Sans'; color: oklch(50% 0.02 240);">annual expenditure
+              forecast by 2030</div>
+          </div>
+
+          <!-- CARD: regional share -->
+          <div
+            style="position:relative; background:#fff; border:1px solid oklch(91% 0.01 90); border-radius:18px; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span
+                style="font:600 12px 'IBM Plex Sans'; letter-spacing:0.06em; text-transform:uppercase; color: oklch(45% 0.02 240);">Leading
+                Region</span>
+              <div style="position:relative;" onMouseEnter="{{ hoverStatRegion }}" onMouseLeave="{{ clearHoverStat }}">
+                <div
+                  style="width:8px; height:8px; cursor:help; transform:rotate(45deg); background: oklch(55% 0.11 80); flex:none;">
+                </div>
+                <div
+                  style="position:absolute; top:16px; right:-8px; width:230px; background: oklch(18% 0.02 230); color:#fff; font:500 12px/1.5 'IBM Plex Sans'; padding:12px 14px; border-radius:10px; opacity:{{ regionCitationOpacity }}; pointer-events:none; transition:opacity 0.15s ease; box-shadow:0 12px 28px rgba(0,0,0,0.25); z-index:20;">
+                  Regional share and market-penetration figures are illustrative placeholders pending confirmed GMTI
+                  2026 regional data.</div>
+              </div>
+            </div>
+            <div class="dc-stat-value"
+              style="font:700 40px/1 'Space Grotesk'; margin-top:18px; color: oklch(28% 0.05 220);">128M</div>
+            <div style="margin-top:10px; font:500 13px 'IBM Plex Sans'; color: oklch(50% 0.02 240);">Muslim arrivals to
+              Asia &mdash; 20.8% market penetration, the leading region</div>
+          </div>
+
+          <!-- CARD: population -->
+          <div
+            style="position:relative; background:#fff; border:1px solid oklch(91% 0.01 90); border-radius:18px; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span
+                style="font:600 12px 'IBM Plex Sans'; letter-spacing:0.06em; text-transform:uppercase; color: oklch(45% 0.02 240);">Global
+                Muslim Population</span>
+              <div style="position:relative;" onMouseEnter="{{ hoverStatPopulation }}"
+                onMouseLeave="{{ clearHoverStat }}">
+                <div
+                  style="width:8px; height:8px; cursor:help; transform:rotate(45deg); background: oklch(55% 0.11 80); flex:none;">
+                </div>
+                <div
+                  style="position:absolute; top:16px; right:-8px; width:230px; background: oklch(18% 0.02 230); color:#fff; font:500 12px/1.5 'IBM Plex Sans'; padding:12px 14px; border-radius:10px; opacity:{{ populationCitationOpacity }}; pointer-events:none; transition:opacity 0.15s ease; box-shadow:0 12px 28px rgba(0,0,0,0.25); z-index:20;">
+                  2.57B global Muslim population by 2036 (~29% of humanity, 70% under age 40) &mdash;
+                  Mastercard-CrescentRating GMTI 2026</div>
+              </div>
+            </div>
+            <div class="dc-stat-value"
+              style="font:700 40px/1 'Space Grotesk'; margin-top:18px; color: oklch(28% 0.05 220);">2.57B</div>
+            <div style="margin-top:10px; font:500 13px 'IBM Plex Sans'; color: oklch(50% 0.02 240);">projected by 2036
+              &mdash; ~29% of humanity, 70% under age 40</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CHART SECTION -->
+      <div class="dc-chart-section" style="padding: 40px 56px 0; max-width: 1320px; margin: 0 auto;">
+        <div class="dc-chart-container"
+          style="background:#fff; border:1px solid oklch(91% 0.01 90); border-radius:20px; padding:28px 32px 24px;">
+          <div class="dc-chart-header"
+            style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; margin-bottom:22px;">
+            <div>
+              <h2 style="margin:0; font:600 21px 'Space Grotesk'; color: oklch(24% 0.03 220);">Market Trajectory</h2>
+              <p class="dc-legend"
+                style="margin:4px 0 0; font:400 13.5px 'IBM Plex Sans'; color: oklch(50% 0.02 240); display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+                <span>Hover any point for exact figures.</span><span
+                  style="display:inline-flex; align-items:center; gap:5px;"><span
+                    style="width:14px; height:2px; background: oklch(28% 0.07 255); display:inline-block;"></span>Actual</span><span
+                  style="display:inline-flex; align-items:center; gap:5px;"><span
+                    style="width:14px; height:0; border-top:2px dashed oklch(55% 0.12 80); display:inline-block;"></span>Projected</span>
+              </p>
+            </div>
+            <div class="dc-chart-tabs"
+              style="display:flex; gap:8px; padding:5px; background: oklch(96% 0.006 90); border-radius:10px;">
+              <button onClick="{{ setTrend }}"
+                style="border:none; cursor:pointer; font:600 13px 'IBM Plex Sans'; padding:8px 14px; border-radius:7px; background: {{ trendTabBg }}; color: {{ trendTabColor }}; box-shadow: {{ trendTabShadow }};">Growth
+                Trajectory</button>
+              <button onClick="{{ setRegion }}"
+                style="border:none; cursor:pointer; font:600 13px 'IBM Plex Sans'; padding:8px 14px; border-radius:7px; background: {{ regionTabBg }}; color: {{ regionTabColor }}; box-shadow: {{ regionTabShadow }};">Regional
+                Share</button>
+            </div>
+          </div>
+
+          <!-- TREND (line) -->
+          <sc-if value="{{ isTrend }}" hint-placeholder-val="{{ true }}">
+            <div class="dc-chart-scroll" style="position:relative; padding:8px 4px 12px; overflow-x:auto;">
+              <svg viewBox="0 0 720 320" class="dc-chart-svg" style="width:100%; height:auto; overflow:visible;"
+                preserveAspectRatio="xMidYMid meet">
+                <line x1="56" y1="270" x2="700" y2="270" stroke="oklch(93% 0.006 90)" stroke-width="1"></line>
+                <text x="46" y="274" text-anchor="end"
+                  style="font:500 11px 'IBM Plex Sans'; fill: oklch(58% 0.01 240);">0M</text>
+                <line x1="56" y1="228.3" x2="700" y2="228.3" stroke="oklch(93% 0.006 90)" stroke-width="1"></line>
+                <text x="46" y="232.3" text-anchor="end"
+                  style="font:500 11px 'IBM Plex Sans'; fill: oklch(58% 0.01 240);">50M</text>
+                <line x1="56" y1="186.7" x2="700" y2="186.7" stroke="oklch(93% 0.006 90)" stroke-width="1"></line>
+                <text x="46" y="190.7" text-anchor="end"
+                  style="font:500 11px 'IBM Plex Sans'; fill: oklch(58% 0.01 240);">100M</text>
+                <line x1="56" y1="145" x2="700" y2="145" stroke="oklch(93% 0.006 90)" stroke-width="1"></line>
+                <text x="46" y="149" text-anchor="end"
+                  style="font:500 11px 'IBM Plex Sans'; fill: oklch(58% 0.01 240);">150M</text>
+                <line x1="56" y1="103.3" x2="700" y2="103.3" stroke="oklch(93% 0.006 90)" stroke-width="1"></line>
+                <text x="46" y="107.3" text-anchor="end"
+                  style="font:500 11px 'IBM Plex Sans'; fill: oklch(58% 0.01 240);">200M</text>
+                <line x1="56" y1="61.7" x2="700" y2="61.7" stroke="oklch(93% 0.006 90)" stroke-width="1"></line>
+                <text x="46" y="65.7" text-anchor="end"
+                  style="font:500 11px 'IBM Plex Sans'; fill: oklch(58% 0.01 240);">250M</text>
+                <line x1="56" y1="20" x2="700" y2="20" stroke="oklch(93% 0.006 90)" stroke-width="1"></line>
+                <text x="46" y="24" text-anchor="end"
+                  style="font:500 11px 'IBM Plex Sans'; fill: oklch(58% 0.01 240);">300M</text>
+                <line x1="56" y1="270" x2="700" y2="270" stroke="oklch(85% 0.01 90)" stroke-width="1.5"></line>
+
+                <polyline points="90,123.3 191.7,106.7" fill="none" stroke="oklch(28% 0.07 255)" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round"></polyline>
+                <polyline points="191.7,106.7 293.3,96.7 700,51.7" fill="none" stroke="oklch(55% 0.12 80)"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"></polyline>
+
+                <g style="cursor:pointer;" onMouseEnter="{{ hoverTrend0 }}" onMouseLeave="{{ clearHoverTrend }}">
+                  <circle cx="90" cy="123.3" r="16" fill="transparent"></circle>
+                  <circle cx="90" cy="123.3" r="{{ dot0Radius }}" fill="oklch(28% 0.07 255)" stroke="#fff"
+                    stroke-width="2"></circle>
+                  <text x="90" y="292" text-anchor="middle"
+                    style="font:600 12px 'IBM Plex Sans'; fill: oklch(45% 0.02 240);">2024</text>
+                  <g style="opacity:{{ tooltip0Opacity }}; transition:opacity 0.15s ease; pointer-events:none;">
+                    <rect x="4" y="59.3" width="200" height="56" rx="10" fill="oklch(24% 0.03 220)"></rect>
+                    <text x="104" y="81.3" text-anchor="middle"
+                      style="font:700 15px 'Space Grotesk'; fill:#fff;">176M</text>
+                    <text x="104" y="95.3" text-anchor="middle"
+                      style="font:600 10px 'IBM Plex Sans'; fill: oklch(78% 0.02 240);">2024 &middot; Actual</text>
+                    <text x="104" y="109.3" text-anchor="middle"
+                      style="font:500 9.5px 'IBM Plex Sans'; fill: oklch(85% 0.06 85);">2024 actual</text>
+                  </g>
+                </g>
+                <g style="cursor:pointer;" onMouseEnter="{{ hoverTrend1 }}" onMouseLeave="{{ clearHoverTrend }}">
+                  <circle cx="191.7" cy="106.7" r="16" fill="transparent"></circle>
+                  <circle cx="191.7" cy="106.7" r="{{ dot1Radius }}" fill="oklch(28% 0.07 255)" stroke="#fff"
+                    stroke-width="2"></circle>
+                  <text x="191.7" y="292" text-anchor="middle"
+                    style="font:600 12px 'IBM Plex Sans'; fill: oklch(45% 0.02 240);">2025</text>
+                  <g style="opacity:{{ tooltip1Opacity }}; transition:opacity 0.15s ease; pointer-events:none;">
+                    <rect x="91.7" y="42.7" width="200" height="56" rx="10" fill="oklch(24% 0.03 220)"></rect>
+                    <text x="191.7" y="64.7" text-anchor="middle"
+                      style="font:700 15px 'Space Grotesk'; fill:#fff;">196M</text>
+                    <text x="191.7" y="78.7" text-anchor="middle"
+                      style="font:600 10px 'IBM Plex Sans'; fill: oklch(78% 0.02 240);">2025 &middot; Actual</text>
+                    <text x="191.7" y="92.7" text-anchor="middle"
+                      style="font:500 9.5px 'IBM Plex Sans'; fill: oklch(85% 0.06 85);">+11.3% YoY &mdash; momentum
+                      regained</text>
+                  </g>
+                </g>
+                <g style="cursor:pointer;" onMouseEnter="{{ hoverTrend2 }}" onMouseLeave="{{ clearHoverTrend }}">
+                  <circle cx="293.3" cy="96.7" r="16" fill="transparent"></circle>
+                  <circle cx="293.3" cy="96.7" r="{{ dot2Radius }}" fill="oklch(55% 0.12 80)" stroke="#fff"
+                    stroke-width="2"></circle>
+                  <text x="293.3" y="292" text-anchor="middle"
+                    style="font:600 12px 'IBM Plex Sans'; fill: oklch(45% 0.02 240);">2026</text>
+                  <g style="opacity:{{ tooltip2Opacity }}; transition:opacity 0.15s ease; pointer-events:none;">
+                    <rect x="193.3" y="32.7" width="200" height="56" rx="10" fill="oklch(24% 0.03 220)"></rect>
+                    <text x="293.3" y="54.7" text-anchor="middle"
+                      style="font:700 15px 'Space Grotesk'; fill:#fff;">208M</text>
+                    <text x="293.3" y="68.7" text-anchor="middle"
+                      style="font:600 10px 'IBM Plex Sans'; fill: oklch(78% 0.02 240);">2026 &middot; Projected</text>
+                    <text x="293.3" y="82.7" text-anchor="middle"
+                      style="font:500 9.5px 'IBM Plex Sans'; fill: oklch(85% 0.06 85);">GMTI 2026 projection</text>
+                  </g>
+                </g>
+                <g style="cursor:pointer;" onMouseEnter="{{ hoverTrend3 }}" onMouseLeave="{{ clearHoverTrend }}">
+                  <circle cx="700" cy="51.7" r="16" fill="transparent"></circle>
+                  <circle cx="700" cy="51.7" r="{{ dot3Radius }}" fill="oklch(55% 0.12 80)" stroke="#fff"
+                    stroke-width="2"></circle>
+                  <text x="700" y="292" text-anchor="middle"
+                    style="font:600 12px 'IBM Plex Sans'; fill: oklch(45% 0.02 240);">2030</text>
+                  <g style="opacity:{{ tooltip3Opacity }}; transition:opacity 0.15s ease; pointer-events:none;">
+                    <rect x="516" y="-12.3" width="200" height="56" rx="10" fill="oklch(24% 0.03 220)"></rect>
+                    <text x="616" y="9.7" text-anchor="middle"
+                      style="font:700 15px 'Space Grotesk'; fill:#fff;">262M</text>
+                    <text x="616" y="23.7" text-anchor="middle"
+                      style="font:600 10px 'IBM Plex Sans'; fill: oklch(78% 0.02 240);">2030 &middot; Projected</text>
+                    <text x="616" y="37.7" text-anchor="middle"
+                      style="font:500 9.5px 'IBM Plex Sans'; fill: oklch(85% 0.06 85);">US$310B annual
+                      expenditure</text>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </sc-if>
+
+          <!-- REGION (bar) -->
+          <sc-if value="{{ isRegion }}" hint-placeholder-val="{{ false }}">
+            <div class="dc-chart-scroll" style="position:relative; padding:8px 4px 12px; overflow-x:auto;">
+              <div style="min-width:500px; position:relative; height:310px; padding:20px 12px 56px 56px;">
+                <!-- Gridlines -->
+                <div
+                  style="position:absolute; top:20px; bottom:56px; left:0; right:12px; pointer-events:none; z-index:0;">
+                  <!-- 150M -->
+                  <div style="position:absolute; top:0%; left:56px; right:0; border-top:1px solid oklch(93% 0.006 90);">
+                  </div>
+                  <div
+                    style="position:absolute; top:0%; left:0; width:46px; text-align:right; font:500 11px 'IBM Plex Sans'; color:oklch(58% 0.01 240); transform:translateY(-50%);">
+                    150M</div>
+
+                  <!-- 120M -->
+                  <div
+                    style="position:absolute; top:20%; left:56px; right:0; border-top:1px solid oklch(93% 0.006 90);">
+                  </div>
+                  <div
+                    style="position:absolute; top:20%; left:0; width:46px; text-align:right; font:500 11px 'IBM Plex Sans'; color:oklch(58% 0.01 240); transform:translateY(-50%);">
+                    120M</div>
+
+                  <!-- 90M -->
+                  <div
+                    style="position:absolute; top:40%; left:56px; right:0; border-top:1px solid oklch(93% 0.006 90);">
+                  </div>
+                  <div
+                    style="position:absolute; top:40%; left:0; width:46px; text-align:right; font:500 11px 'IBM Plex Sans'; color:oklch(58% 0.01 240); transform:translateY(-50%);">
+                    90M</div>
+
+                  <!-- 60M -->
+                  <div
+                    style="position:absolute; top:60%; left:56px; right:0; border-top:1px solid oklch(93% 0.006 90);">
+                  </div>
+                  <div
+                    style="position:absolute; top:60%; left:0; width:46px; text-align:right; font:500 11px 'IBM Plex Sans'; color:oklch(58% 0.01 240); transform:translateY(-50%);">
+                    60M</div>
+
+                  <!-- 30M -->
+                  <div
+                    style="position:absolute; top:80%; left:56px; right:0; border-top:1px solid oklch(93% 0.006 90);">
+                  </div>
+                  <div
+                    style="position:absolute; top:80%; left:0; width:46px; text-align:right; font:500 11px 'IBM Plex Sans'; color:oklch(58% 0.01 240); transform:translateY(-50%);">
+                    30M</div>
+
+                  <!-- 0M -->
+                  <div
+                    style="position:absolute; top:100%; left:56px; right:0; border-top:1.5px solid oklch(85% 0.01 90);">
+                  </div>
+                  <div
+                    style="position:absolute; top:100%; left:0; width:46px; text-align:right; font:500 11px 'IBM Plex Sans'; color:oklch(58% 0.01 240); transform:translateY(-50%);">
+                    0M</div>
+                </div>
+
+                <!-- Bars -->
+                <div class="dc-region-bar-container"
+                  style="display:flex; gap:28px; height:100%; position:relative; z-index:1;">
+                  <sc-for list="{{ regionBars }}" as="bar" hint-placeholder-count="5">
+                    <div class="dc-region-item" style="flex:1; position:relative; height:100%; cursor:pointer;">
+                      <div class="dc-region-tooltip"
+                        style="position:absolute; bottom:{{ bar.heightPct }}; left:50%; transform:translate(-50%, -8px); opacity:0; transition:opacity 0.15s ease; font:700 13px 'Space Grotesk'; padding:6px 12px; border-radius:7px; background: oklch(24% 0.03 220); color:#fff; white-space:nowrap; text-align:center; line-height:1.4; pointer-events:none; z-index:10;">
+                        ~{{ bar.arrivals }}M arrivals ({{ bar.share }}%)</div>
+                      <div class="dc-region-bar"
+                        style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:100%; max-width:56px; border-radius:10px 10px 0 0; height:{{ bar.heightPct }}; background: {{ bar.color }}; transition: filter 0.15s ease;"
+                        style-hover="{{ bar.barHover }}"></div>
+                      <div
+                        style="position:absolute; top:100%; left:50%; transform:translateX(-50%); margin-top:10px; font:600 13px 'IBM Plex Sans'; color: oklch(30% 0.02 220);">
+                        {{ bar.label }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+
+      <!-- DESTINATIONS -->
+      <div class="dc-dest-section" style="padding: 36px 56px 56px; max-width: 1320px; margin: 0 auto;">
+        <div class="dc-dest-header"
+          style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; margin-bottom:20px;">
+          <div>
+            <h2 style="margin:0; font:600 21px 'Space Grotesk'; color: oklch(24% 0.03 220);">Top 5 Muslim-Friendly
+              Destinations</h2>
+            <p style="margin:4px 0 0; font:400 13.5px 'IBM Plex Sans'; color: oklch(50% 0.02 240);">Ranked in the GMTI
+              2026 destination index (ties shown as "="). Hover a card for its ACES score breakdown.</p>
+          </div>
+          <div
+            style="display:flex; gap:8px; padding:5px; background:#fff; border:1px solid oklch(91% 0.01 90); border-radius:10px;">
+            <button onClick="{{ setScoreMetric }}"
+              style="border:none; cursor:pointer; font:600 13px 'IBM Plex Sans'; padding:8px 14px; border-radius:7px; background: {{ scoreTabBg }}; color: {{ scoreTabColor }};">OIC
+              Overall</button>
+            <button onClick="{{ setGrowthMetric }}"
+              style="border:none; cursor:pointer; font:600 13px 'IBM Plex Sans'; padding:8px 14px; border-radius:7px; background: {{ growthTabBg }}; color: {{ growthTabColor }};">Non-OIC</button>
+          </div>
+        </div>
+
+        <div class="dc-dest-grid" style="display:grid; grid-template-columns: repeat(5, 1fr); gap:18px;">
+          <sc-for list="{{ destinations }}" as="d" hint-placeholder-count="5">
+            <div onClick="{{ d.openModal }}" onMouseEnter="{{ d.onCardEnter }}" onMouseLeave="{{ d.onCardLeave }}"
+              style="position:relative; background:#fff; border:1px solid oklch(91% 0.01 90); border-radius:16px; padding:20px 18px; display:flex; flex-direction:column; gap:14px; overflow:hidden; cursor:pointer; transition: box-shadow 0.2s ease, transform 0.2s ease;"
+              style-hover="{{ d.cardHover }}">
+              <div style="display:flex; align-items:center; justify-content:space-between;">
+                <div
+                  style="min-width:30px; height:30px; padding:0 8px; border-radius:15px; background: oklch(45% 0.09 200); color:#fff; display:flex; align-items:center; justify-content:center; font:700 13px 'Space Grotesk';">
+                  {{ d.rank }}</div>
+                <div style="font:700 18px 'Space Grotesk'; color: oklch(45% 0.09 200);">{{ d.metricValue }}</div>
+              </div>
+              <div>
+                <div style="font:600 17px 'Space Grotesk'; color: oklch(22% 0.03 220);">{{ d.name }}</div>
+                <div
+                  style="font:500 11.5px 'IBM Plex Sans'; letter-spacing:0.04em; text-transform:uppercase; color: oklch(52% 0.02 240); margin-top:2px;">
+                  {{ d.metricLabel }}</div>
+              </div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <sc-for list="{{ d.tags }}" as="tag" hint-placeholder-count="3">
+                  <span
+                    style="font:600 10.5px 'IBM Plex Sans'; padding:4px 9px; border-radius:999px; background: oklch(96% 0.02 85); color: oklch(42% 0.07 80); border:1px solid oklch(88% 0.03 85);">{{
+                    tag }}</span>
+                </sc-for>
+              </div>
+
+              <!-- ACES breakdown - reveal on hover -->
+              <div
+                style="position:absolute; inset:0; background:#fff; padding:18px; opacity:{{ d.acesOpacity }}; pointer-events:none; transition:opacity 0.18s ease; display:flex; flex-direction:column; justify-content:center; gap:8px;">
+                <div style="font:600 13px 'Space Grotesk'; color: oklch(24% 0.03 220); margin-bottom:2px;">{{ d.name }}
+                  &mdash; ACES Breakdown</div>
+                <sc-for list="{{ d.aces }}" as="a" hint-placeholder-count="4">
+                  <div>
+                    <div
+                      style="display:flex; justify-content:space-between; font:500 11px 'IBM Plex Sans'; color: oklch(45% 0.02 240); margin-bottom:3px;">
+                      <span>{{ a.label }}</span><span>{{ a.value }}</span>
+                    </div>
+                    <div style="height:5px; border-radius:3px; background: oklch(94% 0.01 90); overflow:hidden;">
+                      <div
+                        style="height:100%; border-radius:3px; background: oklch(55% 0.11 80); width: {{ a.widthPct }};">
+                      </div>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- DESTINATION DETAIL MODAL -->
+      <sc-if value="{{ hasActiveDest }}" hint-placeholder-val="{{ false }}">
+        <div onClick="{{ closeModal }}" class="dc-modal-backdrop"
+          style="position:fixed; inset:0; background:rgba(20,26,30,0.55); display:flex; align-items:center; justify-content:center; padding:32px; z-index:100;">
+          <div onClick="{{ stopClick }}" class="dc-modal-inner"
+            style="position:relative; background:#fff; border-radius:20px; width:100%; max-width:920px; max-height:90vh; overflow-y:auto; padding:32px 36px 30px; box-shadow: 0 24px 60px rgba(0,0,0,0.25);">
+            <button onClick="{{ closeModal }}"
+              style="position:absolute; top:20px; right:20px; width:34px; height:34px; border-radius:50%; border:1px solid oklch(88% 0.01 90); background:#fff; cursor:pointer; font:600 16px 'IBM Plex Sans'; color: oklch(40% 0.02 240); display:flex; align-items:center; justify-content:center;">&times;</button>
+
+            <div class="dc-modal-header" style="display:flex; align-items:center; gap:24px; padding-right:40px;">
+              <div
+                style="flex: 0 0 300px; display:flex; align-items:stretch; justify-content:space-between; max-width: 100%;">
+                <div>
+                  <div
+                    style="font:600 12px 'IBM Plex Sans'; letter-spacing:0.08em; text-transform:uppercase; color: oklch(52% 0.02 240); margin-bottom:8px;">
+                    Ranked Number</div>
+                  <div class="dc-modal-rank-value" style="font:700 40px/1 'Space Grotesk'; color: oklch(45% 0.09 200);">
+                    {{
+                    activeDest.rankLabel }}</div>
+                </div>
+                <div class="dc-modal-divider" style="width:1px; background: oklch(90% 0.01 90);">
+                </div>
+              </div>
+              <div>
+                <div
+                  style="font:600 12px 'IBM Plex Sans'; letter-spacing:0.08em; text-transform:uppercase; color: oklch(52% 0.02 240); margin-bottom:8px;">
+                  GMTI Score</div>
+                <div style="display:flex; align-items:center; gap:12px;">
+                  <span class="dc-modal-score-value"
+                    style="font:700 40px/1 'Space Grotesk'; color: oklch(24% 0.03 220);">{{ activeDest.score }}</span>
+                  <span
+                    style="font:600 13px 'IBM Plex Sans'; padding:5px 10px; border-radius:999px; background: oklch(96% 0.02 85); color: oklch(42% 0.07 80); white-space:nowrap;">{{
+                    activeDest.scoreDelta }}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dc-modal-detail-grid"
+              style="display:grid; grid-template-columns: 300px 1fr; gap:24px; margin-top:24px;">
+              <div>
+                <div class="dc-modal-map"
+                  style="border-radius:14px; height:180px; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative; background: oklch(20% 0.05 240); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);">
+                  <div
+                    style="position:absolute; inset:0; background-image: url('https://flagcdn.com/{{ activeDest.iso }}.svg'); background-size:cover; background-position:center; filter:saturate(1.2);">
+                  </div>
+                  <div
+                    style="position:absolute; inset:0; background: linear-gradient(to bottom, rgba(15,20,30,0.3), rgba(15,20,30,0.8));">
+                  </div>
+                  <span
+                    style="position:relative; z-index:1; font:700 24px 'Space Grotesk'; letter-spacing:0.06em; color: #ffffff; text-transform:uppercase; text-shadow: 0 2px 10px rgba(0,0,0,0.6);">{{
+                    activeDest.name }}</span>
+                </div>
+                <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:16px;">
+                  <sc-for list="{{ activeDest.tags }}" as="tag" hint-placeholder-count="3">
+                    <span
+                      style="font:600 10.5px 'IBM Plex Sans'; padding:5px 10px; border-radius:999px; background: oklch(96% 0.02 85); color: oklch(42% 0.07 80); border:1px solid oklch(88% 0.03 85);">{{
+                      tag }}</span>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div class="dc-modal-cat-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap:14px;">
+                <sc-for list="{{ activeDest.categories }}" as="cat" hint-placeholder-count="4">
+                  <div
+                    style="background: oklch(97% 0.006 90); border:1px solid oklch(91% 0.01 90); border-radius:12px; padding:14px 16px;">
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+                      <span
+                        style="font:700 11.5px 'IBM Plex Sans'; letter-spacing:0.05em; text-transform:uppercase; color: oklch(28% 0.03 220);">{{
+                        cat.label }}</span>
+                      <span style="font:600 11px 'IBM Plex Sans'; color: oklch(52% 0.02 240);">{{ cat.weight }}</span>
+                    </div>
+                    <sc-for list="{{ cat.metrics }}" as="m" hint-placeholder-count="3">
+                      <div style="margin-bottom:8px;">
+                        <div
+                          style="display:flex; justify-content:space-between; font:500 11.5px 'IBM Plex Sans'; color: oklch(40% 0.06 200); margin-bottom:3px;">
+                          <span>{{ m.label }}</span><span>{{ m.value }}</span>
+                        </div>
+                        <div style="height:5px; border-radius:3px; background: oklch(90% 0.01 90); overflow:hidden;">
+                          <div
+                            style="height:100%; border-radius:3px; background: oklch(55% 0.11 80); width: {{ m.widthPct }};">
+                          </div>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- FOOTER -->
+      <div class="dc-footer" style="padding: 0 56px 40px; max-width: 1320px; margin: 0 auto;">
+        <div
+          style="border-top:1px solid oklch(90% 0.01 90); padding-top:20px; font:400 12px 'IBM Plex Sans'; color: oklch(55% 0.02 240); line-height:1.6;">
+          Source: Mastercard&ndash;CrescentRating Global Muslim Travel Index (GMTI) 2026. Arrivals, market value,
+          population figures and top-5 GMTI scores reflect the verified GMTI 2026 figures supplied for this update.
+          Regional-share percentages and per-country ACES category breakdowns are carried over as illustrative
+          placeholders pending confirmed GMTI 2026 source data; YoY arrival growth per destination is not yet available
+          and is shown as &ldquo;&mdash;&rdquo;.
+        </div>
+      </div>
+
+    </div>
+
+  </x-dc>
+  <script type="text/x-dc" data-dc-script
+    data-props="{&quot;defaultChartView&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;trend&quot;, &quot;options&quot;: [&quot;trend&quot;, &quot;region&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Behavior&quot;}, &quot;defaultDestMetric&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;score&quot;, &quot;options&quot;: [&quot;score&quot;, &quot;growth&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Behavior&quot;}}">
+
+class Component extends DCLogic {
+  state = {
+    year: '2024',
+    chartTab: 'trend',
+    destMetric: 'score',
+    activeDestIndex: null,
+    hoveredTrendIdx: null,
+    hoveredDestIndex: null,
+    hoveredStatCitation: null,
+  };
+
+  componentDidMount() {
+    var update = {};
+    if (this.props.defaultChartView) { update.chartTab = this.props.defaultChartView; }
+    if (this.props.defaultDestMetric) { update.destMetric = this.props.defaultDestMetric; }
+    if (Object.keys(update).length) { this.setState(update); }
+  }
+
+  setYear2024 = () => this.setState({ year: '2024' });
+  setYear2028 = () => this.setState({ year: '2028' });
+  setTrend = () => this.setState({ chartTab: 'trend' });
+  setRegion = () => this.setState({ chartTab: 'region' });
+  setScoreMetric = () => this.setState({ destMetric: 'score' });
+  setGrowthMetric = () => this.setState({ destMetric: 'growth' });
+  openModal = (idx) => this.setState({ activeDestIndex: idx });
+  closeModal = () => this.setState({ activeDestIndex: null });
+  stopClick = (e) => { e.stopPropagation(); };
+  hoverTrend0 = () => this.setState({ hoveredTrendIdx: 0 });
+  hoverTrend1 = () => this.setState({ hoveredTrendIdx: 1 });
+  hoverTrend2 = () => this.setState({ hoveredTrendIdx: 2 });
+  hoverTrend3 = () => this.setState({ hoveredTrendIdx: 3 });
+  clearHoverTrend = () => this.setState({ hoveredTrendIdx: null });
+  setHoverDest = (idx) => this.setState({ hoveredDestIndex: idx });
+  clearHoverDest = () => this.setState({ hoveredDestIndex: null });
+  hoverStatHero = () => this.setState({ hoveredStatCitation: 'hero' });
+  hoverStatMarket = () => this.setState({ hoveredStatCitation: 'market' });
+  hoverStatRegion = () => this.setState({ hoveredStatCitation: 'region' });
+  hoverStatPopulation = () => this.setState({ hoveredStatCitation: 'population' });
+  clearHoverStat = () => this.setState({ hoveredStatCitation: null });
+
+  renderVals() {
+    var TREND = [
+      { year: '2024', value: 176 },
+      { year: '2025', value: 196 },
+      { year: '2026', value: 208 },
+      { year: '2030', value: 262 },
+    ];
+
+    var REGIONS = [
+      { label: 'Asia', arrivals: 128, share: 65.3, totalGlobal: 616, penetration: 20.8, color: 'oklch(45% 0.09 200)' },
+      { label: 'Europe', arrivals: 45, share: 23.0, totalGlobal: 691, penetration: 6.5, color: 'oklch(55% 0.08 200)' },
+      { label: 'Africa', arrivals: 18, share: 9.2, totalGlobal: null, penetration: null, color: 'oklch(65% 0.07 190)' },
+      { label: 'Americas', arrivals: 4, share: 2.0, totalGlobal: null, penetration: null, color: 'oklch(55% 0.11 80)' },
+      { label: 'Oceania', arrivals: 1, share: 0.5, totalGlobal: null, penetration: null, color: 'oklch(70% 0.09 85)' },
+    ];
+
+    var DESTINATIONS = [
+      { rank: '1', name: 'Malaysia', iso: 'my', score: 83, growth: '\u2014', scoreDelta: '+4 vs last year', tags: ['OIC', '#1 every edition', '#1 Women-Friendly', '#1 Accessible (OIC)'],
+        aces: [ {label:'Access', value:75}, {label:'Communication', value:79}, {label:'Environment', value:96}, {label:'Services', value:95} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:92}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:97} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:100}, {label:'Prayer Places', value:100}, {label:'Muslim-Friendly Airport', value:100}, {label:'Muslim-Friendly Accommodation', value:80} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:94}, {label:'Connectivity', value:55}, {label:'Transport Infrastructure', value:75} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:71}, {label:'Destination Marketing', value:83}, {label:'Stakeholder Awareness', value:82} ] },
+        ] },
+      { rank: '=2', name: 'Indonesia', iso: 'id', score: 79, growth: '\u2014', scoreDelta: '+3 vs last year', tags: ['OIC', 'Biggest climber: 5th \u2192 2nd', '#2 Women-Friendly'],
+        aces: [ {label:'Access', value:58}, {label:'Communication', value:71}, {label:'Environment', value:94}, {label:'Services', value:95} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:92}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:90} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:100}, {label:'Prayer Places', value:100}, {label:'Muslim-Friendly Airport', value:100}, {label:'Muslim-Friendly Accommodation', value:80} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:69}, {label:'Connectivity', value:27}, {label:'Transport Infrastructure', value:79} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:44}, {label:'Destination Marketing', value:85}, {label:'Stakeholder Awareness', value:85} ] },
+        ] },
+      { rank: '=2', name: 'Saudi Arabia', iso: 'sa', score: 79, growth: '\u2014', scoreDelta: '+1 vs last year', tags: ['OIC', 'Vision 2030', 'Umrah via tourist eVisa'],
+        aces: [ {label:'Access', value:80}, {label:'Communication', value:52}, {label:'Environment', value:94}, {label:'Services', value:95} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:84}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:97} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:100}, {label:'Prayer Places', value:100}, {label:'Muslim-Friendly Airport', value:100}, {label:'Muslim-Friendly Accommodation', value:80} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:68}, {label:'Connectivity', value:91}, {label:'Transport Infrastructure', value:80} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:64}, {label:'Destination Marketing', value:41}, {label:'Stakeholder Awareness', value:51} ] },
+        ] },
+      { rank: '=2', name: 'Türkiye', iso: 'tr', score: 79, growth: '\u2014', scoreDelta: '+1 vs last year', tags: ['OIC', 'Heritage + modern leisure'],
+        aces: [ {label:'Access', value:77}, {label:'Communication', value:50}, {label:'Environment', value:91}, {label:'Services', value:93} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:76}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:97} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:95}, {label:'Prayer Places', value:100}, {label:'Muslim-Friendly Airport', value:100}, {label:'Muslim-Friendly Accommodation', value:76} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:89}, {label:'Connectivity', value:65}, {label:'Transport Infrastructure', value:76} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:22}, {label:'Destination Marketing', value:45}, {label:'Stakeholder Awareness', value:82} ] },
+        ] },
+      { rank: '5', name: 'Qatar', iso: 'qa', score: 76, growth: '\u2014', scoreDelta: '0 vs last year', tags: ['OIC', 'Global events hub'],
+        aces: [ {label:'Access', value:84}, {label:'Communication', value:52}, {label:'Environment', value:97}, {label:'Services', value:95} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:92}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:99} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:100}, {label:'Prayer Places', value:100}, {label:'Muslim-Friendly Airport', value:100}, {label:'Muslim-Friendly Accommodation', value:80} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:74}, {label:'Connectivity', value:90}, {label:'Transport Infrastructure', value:89} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:70}, {label:'Destination Marketing', value:36}, {label:'Stakeholder Awareness', value:51} ] },
+        ] },
+    ];
+
+    var NON_OIC_DESTINATIONS = [
+      { rank: '1', name: 'Singapore', iso: 'sg', score: 73, growth: '\u2014', scoreDelta: '+2 vs 2025', tags: ['Non-OIC', 'Top 5 Non-OIC'],
+        aces: [ {label:'Access', value:69}, {label:'Communication', value:67}, {label:'Environment', value:79}, {label:'Services', value:60} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:92}, {label:'Faith Restrictions', value:45}, {label:'Basic Utilities', value:100} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:91}, {label:'Prayer Places', value:70}, {label:'Muslim-Friendly Airport', value:16}, {label:'Muslim-Friendly Accommodation', value:61} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:82}, {label:'Connectivity', value:27}, {label:'Transport Infrastructure', value:98} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:66}, {label:'Destination Marketing', value:83}, {label:'Stakeholder Awareness', value:53} ] },
+        ] },
+      { rank: '2', name: 'Hong Kong', iso: 'hk', score: 64, growth: '\u2014', scoreDelta: '+2 vs 2025', tags: ['Non-OIC', 'Top 5 Non-OIC'],
+        aces: [ {label:'Access', value:69}, {label:'Communication', value:50}, {label:'Environment', value:97}, {label:'Services', value:50} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:92}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:99} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:66}, {label:'Prayer Places', value:55}, {label:'Muslim-Friendly Airport', value:20}, {label:'Muslim-Friendly Accommodation', value:60} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:87}, {label:'Connectivity', value:22}, {label:'Transport Infrastructure', value:98} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:26}, {label:'Destination Marketing', value:85}, {label:'Stakeholder Awareness', value:40} ] },
+        ] },
+      { rank: '3', name: 'Taiwan', iso: 'tw', score: 59, growth: '\u2014', scoreDelta: '+1 vs 2025', tags: ['Non-OIC', 'Top 5 Non-OIC'],
+        aces: [ {label:'Access', value:56}, {label:'Communication', value:46}, {label:'Environment', value:96}, {label:'Services', value:59} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:92}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:97} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:65}, {label:'Prayer Places', value:50}, {label:'Muslim-Friendly Airport', value:63}, {label:'Muslim-Friendly Accommodation', value:56} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:59}, {label:'Connectivity', value:11}, {label:'Transport Infrastructure', value:98} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:26}, {label:'Destination Marketing', value:85}, {label:'Stakeholder Awareness', value:27} ] },
+        ] },
+      { rank: '3', name: 'United Kingdom (UK)', iso: 'gb', score: 59, growth: '\u2014', scoreDelta: '-4 vs 2025', tags: ['Non-OIC', 'Top 5 Non-OIC'],
+        aces: [ {label:'Access', value:54}, {label:'Communication', value:41}, {label:'Environment', value:67}, {label:'Services', value:67} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:44}, {label:'Faith Restrictions', value:59}, {label:'Basic Utilities', value:98} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:80}, {label:'Prayer Places', value:70}, {label:'Muslim-Friendly Airport', value:61}, {label:'Muslim-Friendly Accommodation', value:56} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:49}, {label:'Connectivity', value:40}, {label:'Transport Infrastructure', value:74} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:62}, {label:'Destination Marketing', value:22}, {label:'Stakeholder Awareness', value:39} ] },
+        ] },
+      { rank: '5', name: 'Thailand', iso: 'th', score: 58, growth: '\u2014', scoreDelta: '+1 vs 2025', tags: ['Non-OIC', 'Top 5 Non-OIC'],
+        aces: [ {label:'Access', value:64}, {label:'Communication', value:36}, {label:'Environment', value:92}, {label:'Services', value:61} ],
+        categories: [
+          { key: 'environment', label: 'Environment', weight: '30%', metrics: [ {label:'General Safety', value:80}, {label:'Faith Restrictions', value:100}, {label:'Basic Utilities', value:96} ] },
+          { key: 'services', label: 'Services', weight: '40%', metrics: [ {label:'Halal Dining', value:61}, {label:'Prayer Places', value:50}, {label:'Muslim-Friendly Airport', value:80}, {label:'Muslim-Friendly Accommodation', value:52} ] },
+          { key: 'access', label: 'Access', weight: '10%', metrics: [ {label:'Visa Requirements', value:88}, {label:'Connectivity', value:37}, {label:'Transport Infrastructure', value:66} ] },
+          { key: 'communications', label: 'Communications', weight: '20%', metrics: [ {label:'Communication Proficiency', value:15}, {label:'Destination Marketing', value:57}, {label:'Stakeholder Awareness', value:35} ] },
+        ] }
+    ];
+    var isYear2024 = this.state.year === '2024';
+    var isYear2028 = this.state.year === '2028';
+    var isTrend = this.state.chartTab === 'trend';
+    var isRegion = this.state.chartTab === 'region';
+    var isScore = this.state.destMetric === 'score';
+
+    var heroLabel = isYear2024 ? 'Muslim Traveler Arrivals (2025)' : 'Projected Arrivals (2030F)';
+    var heroValue = isYear2024 ? '196M' : '262M';
+    var heroDelta = isYear2024 ? '+11.3% vs 2024 (176M)' : '+33.7% vs 2025 estimate';
+    var heroCitation = isYear2024
+      ? '196M international Muslim arrivals in 2025 (+11.3% YoY) \u2014 Mastercard-CrescentRating GMTI 2026'
+      : '262M projected international Muslim arrivals by 2030 \u2014 Mastercard-CrescentRating GMTI 2026';
+
+    var activeBg = 'oklch(45% 0.09 200)';
+    var activeColor = '#fff';
+    var inactiveBg = 'transparent';
+    var inactiveColor = 'oklch(45% 0.02 240)';
+    var activeShadow = '0 1px 3px rgba(0,0,0,0.15)';
+
+    var axisX = 56, padL = 90, padR = 20, chartW = 720, plotW = chartW - padL - padR;
+    var chartTop = 20, chartBottom = 270, maxVal = 300;
+    function yFor(v) { return chartBottom - ((v / maxVal) * (chartBottom - chartTop)); }
+    var GRID_STEPS = [0, 50, 100, 150, 200, 250, 300];
+    var gridlines = GRID_STEPS.map(function (v) {
+      var y = yFor(v);
+      return { y: y, labelY: y + 4, label: v + 'M' };
+    });
+    var n = TREND.length;
+    var trendPoints = TREND.map(function (t, i) {
+      var x = padL + (i * (plotW / (n - 1)));
+      var y = yFor(t.value);
+      var labelX = Math.min(Math.max(x - 40, 4), 636);
+      return {
+        year: t.year,
+        value: t.value,
+        x: x,
+        y: y,
+        dotColor: i < 2 ? 'oklch(28% 0.07 255)' : 'oklch(55% 0.12 80)',
+        labelX: labelX,
+        labelY: y - 52,
+        labelTextX: labelX + 40,
+        labelTextY1: y - 32,
+        labelTextY2: y - 20,
+        hoverStyle: {},
+        labelHoverStyle: { opacity: 1 },
+      };
+    });
+    var trendPolylinePoints = trendPoints.slice(0, 2).map(function (p) { return p.x + ',' + p.y; }).join(' ');
+    var trendDashedPolylinePoints = trendPoints.slice(1).map(function (p) { return p.x + ',' + p.y; }).join(' ');
+
+    var regionBars = REGIONS.map(function (r) {
+      return {
+        label: r.label,
+        arrivals: r.arrivals,
+        share: r.share,
+        penetration: r.penetration,
+        color: r.color,
+        heightPct: Math.max((r.arrivals / 150) * 100, 4) + '%',
+        tooltipHover: { opacity: 1 },
+        barHover: { filter: 'brightness(1.08)' },
+      };
+    });
+
+    var self = this;
+    var activeDestinations = isScore ? DESTINATIONS : NON_OIC_DESTINATIONS;
+    var destinations = activeDestinations.map(function (d, i) {
+      return {
+        rank: d.rank,
+        name: d.name,
+        tags: d.tags,
+        metricValue: d.score,
+        metricLabel: 'GMTI Score',
+        aces: d.aces.map(function (a) { return { label: a.label, value: (a.value === null ? '\u2014' : a.value), widthPct: (a.value === null ? '0%' : a.value + '%') }; }),
+        cardHover: { boxShadow: '0 10px 24px rgba(0,0,0,0.08)', transform: 'translateY(-3px)' },
+        acesOpacity: self.state.hoveredDestIndex === i ? 1 : 0,
+        openModal: function () { self.openModal(i); },
+        onCardEnter: function () { self.setHoverDest(i); },
+        onCardLeave: function () { self.clearHoverDest(); },
+      };
+    });
+
+    var activeDestIndex = this.state.activeDestIndex;
+    var hasActiveDest = activeDestIndex !== null && activeDestIndex !== undefined;
+    var activeDest = null;
+    if (hasActiveDest) {
+      var raw = activeDestinations[activeDestIndex];
+      activeDest = {
+        rank: raw.rank,
+        rankLabel: (String(raw.rank).indexOf('=') === 0) ? raw.rank : ('#' + raw.rank),
+        name: raw.name,
+        iso: raw.iso,
+        score: raw.score,
+        scoreDelta: raw.scoreDelta,
+        tags: raw.tags,
+        categories: raw.categories.map(function (cat) {
+          return {
+            label: cat.label,
+            weight: cat.weight,
+            metrics: cat.metrics.map(function (m) { return { label: m.label, value: (m.value === null ? '\u2014' : m.value), widthPct: (m.value === null ? '0%' : m.value + '%') }; }),
+          };
+        }),
+      };
+    }
+
+    return {
+      isYear2024: isYear2024,
+      isYear2028: isYear2028,
+      setYear2024: this.setYear2024,
+      setYear2028: this.setYear2028,
+      heroLabel: heroLabel,
+      heroValue: heroValue,
+      heroDelta: heroDelta,
+      heroCitation: heroCitation,
+      hoverStatHero: this.hoverStatHero,
+      hoverStatMarket: this.hoverStatMarket,
+      hoverStatRegion: this.hoverStatRegion,
+      hoverStatPopulation: this.hoverStatPopulation,
+      clearHoverStat: this.clearHoverStat,
+      heroCitationOpacity: this.state.hoveredStatCitation === 'hero' ? 1 : 0,
+      marketCitationOpacity: this.state.hoveredStatCitation === 'market' ? 1 : 0,
+      regionCitationOpacity: this.state.hoveredStatCitation === 'region' ? 1 : 0,
+      populationCitationOpacity: this.state.hoveredStatCitation === 'population' ? 1 : 0,
+      year2024Bg: isYear2024 ? activeBg : inactiveBg,
+      year2024Color: isYear2024 ? activeColor : inactiveColor,
+      year2028Bg: isYear2028 ? activeBg : inactiveBg,
+      year2028Color: isYear2028 ? activeColor : inactiveColor,
+      isTrend: isTrend,
+      isRegion: isRegion,
+      setTrend: this.setTrend,
+      setRegion: this.setRegion,
+      trendTabBg: isTrend ? activeBg : inactiveBg,
+      trendTabColor: isTrend ? activeColor : inactiveColor,
+      trendTabShadow: isTrend ? activeShadow : 'none',
+      regionTabBg: isRegion ? activeBg : inactiveBg,
+      regionTabColor: isRegion ? activeColor : inactiveColor,
+      regionTabShadow: isRegion ? activeShadow : 'none',
+      trendPoints: trendPoints,
+      trendPolylinePoints: trendPolylinePoints,
+      trendDashedPolylinePoints: trendDashedPolylinePoints,
+      gridlines: gridlines,
+      hoverTrend0: this.hoverTrend0,
+      hoverTrend1: this.hoverTrend1,
+      hoverTrend2: this.hoverTrend2,
+      hoverTrend3: this.hoverTrend3,
+      clearHoverTrend: this.clearHoverTrend,
+      tooltip0Opacity: this.state.hoveredTrendIdx === 0 ? 1 : 0,
+      tooltip1Opacity: this.state.hoveredTrendIdx === 1 ? 1 : 0,
+      tooltip2Opacity: this.state.hoveredTrendIdx === 2 ? 1 : 0,
+      tooltip3Opacity: this.state.hoveredTrendIdx === 3 ? 1 : 0,
+      dot0Radius: this.state.hoveredTrendIdx === 0 ? 7 : 5,
+      dot1Radius: this.state.hoveredTrendIdx === 1 ? 7 : 5,
+      dot2Radius: this.state.hoveredTrendIdx === 2 ? 7 : 5,
+      dot3Radius: this.state.hoveredTrendIdx === 3 ? 7 : 5,
+      regionBars: regionBars,
+      isScore: isScore,
+      setScoreMetric: this.setScoreMetric,
+      setGrowthMetric: this.setGrowthMetric,
+      scoreTabBg: isScore ? activeBg : inactiveBg,
+      scoreTabColor: isScore ? activeColor : inactiveColor,
+      growthTabBg: !isScore ? activeBg : inactiveBg,
+      growthTabColor: !isScore ? activeColor : inactiveColor,
+      destinations: destinations,
+      hasActiveDest: hasActiveDest,
+      activeDest: activeDest,
+      closeModal: this.closeModal,
+      stopClick: this.stopClick,
+    };
+  }
+}
+
+</script>
+</body>
+
+</html>
